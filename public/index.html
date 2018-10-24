@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Paymerang</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link type="text/css" href="../css/style.css" rel="stylesheet" media="screen">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="vue">
+    
+        <button @click="skip -= limit">Previous</button>
+        <button @click="skip += limit">Next</button>
+        Showing {{skip}} to {{skip + limit}} of {{clients.length}}
+        <div v-for="client, n in page" :key="client"class="item">
+            {{client.Payee.Name}}</b>
+        </div>
+    </div>
+
+</body>
+
+<script type="text/javascript" src="./js/app.js"></script>
+
+</html>
