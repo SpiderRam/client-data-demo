@@ -12,7 +12,6 @@ new Vue({
             type: "GET",
             url: "/clients"
         }).then(function(response) {
-            // response = JSON.parse(response);
             console.log(response);
             self.clients = response;
         });

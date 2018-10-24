@@ -16,14 +16,26 @@
 
 <body>
 
-    <div id="vue">
-    
-        <button @click="skip -= limit">Previous</button>
-        <button @click="skip += limit">Next</button>
-        Showing {{skip}} to {{skip + limit}} of {{clients.length}}
-        <div v-for="client, n in page" :key="client"class="item">
-            {{client.Payee.Name}}</b>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <img src="https://ww1.prweb.com/prfiles/2018/03/19/15338702/Paymerang.jpg">
+            <h3>Client result demo using Vue.js (cdn)</h3>
         </div>
+    </div>
+
+    <div id="main">
+        <div class="card" id="vue">
+            <div class="card-header">
+                <button @click="skip -= limit">Previous</button>
+                <button @click="skip += limit">Next</button>
+                Showing {{skip}} to {{skip + limit}} of {{clients.length}}
+            </div>
+            <div class="card-body">
+                <div v-for="client, n in page" :key="client"class="item">
+                    {{client.Payee.Name}}</b>
+                </div>
+            </div>
+        </div>            
     </div>
 
 </body>
