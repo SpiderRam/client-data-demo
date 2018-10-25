@@ -33,11 +33,15 @@
     border: 1px solid purple;
 }
 
-.item{
+.item {
     background: white;
     padding:5px 10px;
     box-shadow:0px 1px 3px #aaa;
     margin-top:5px;
+}
+
+.item:hover {
+    box-shadow:0px 2px 4px gray;
 }
 
 ul {

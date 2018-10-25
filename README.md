@@ -2,7 +2,7 @@
 
 * Demo page created for application process at Paymerang.
 
-* Dummy data was provided in json file.
+* Dummy data was provided in a json file.
 
 * The requirement - create a webpage that shows each Payee/Payment/Remittance object in a paged interface.  I have never created a website with pagination before, and this was a fun challenge in that regard.
 
