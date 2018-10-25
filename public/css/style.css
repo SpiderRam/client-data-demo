@@ -36,3 +36,25 @@
 ul {
     list-style: none;
 }
+
+.modal-header, .modal-footer {
+    background-image: url("../images/modal-background.png");
+}
+
+.nav-link {
+    color: white;
+    text-shadow: 1px 1px steelblue;
+}
+
+.nav-tabs .nav-link.active {
+    color: blueviolet;
+    text-shadow: none;
+}
+
+#modalButton {
+    background-color: transparent;
+}
+
+#modalButton:hover {
+    background-color: blueviolet;
+}
