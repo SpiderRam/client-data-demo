@@ -24,8 +24,16 @@ new Vue({
       self.getClients();
   },
   computed: {
+
   	page(){
-    	return this.clients.slice(this.skip, this.skip + this.limit);
+        if (this.skip + this.limit <= this.clients.length && this.skip >= 0) {
+            return this.clients.slice(this.skip, this.skip + this.limit);
+        }
+        else {
+            this.skip = 0;
+            this.clients = [];
+            this.getClients();
+        }
     }
   }
 });

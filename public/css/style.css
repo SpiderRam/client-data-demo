@@ -1,8 +1,14 @@
+#headerSpacer {
+    background-image: url("../images/paymerang-background.png");
+    padding: 20px 0px;
+    background-size: cover;
+}
+
 .jumbotron {
     background-color: white;
 }
 
-.jumbotron img {
+#paymerangLogo {
     width: 600px;
     height: 100px;
     border-bottom: 1px solid lightgray;
@@ -48,9 +54,12 @@ ul {
     color: blueviolet;
 }
 
+#footerDiv {
+    float: right;
+}
+
 #back {
     background-color: transparent;
-    float: right;
     border-radius: .25rem;
     color: blueviolet;
     padding: 10px 25px;
@@ -68,7 +77,7 @@ ul {
 .nameAndIcon img {
     height: 30px;
     width: 30px;
-    margin: 0px 10px 25px 0px;
+    margin: 10px 10px 0px 0px;
 }
 
 .payorName {

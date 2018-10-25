@@ -8,6 +8,7 @@
   <title>Paymerang</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link type="text/css" href="../css/style.css" rel="stylesheet" media="screen">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -18,9 +19,11 @@
 <body>
     <div id="vue">
 
+        <div id="headerSpacer"></div>
+
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <img src="https://ww1.prweb.com/prfiles/2018/03/19/15338702/Paymerang.jpg">
+                <img id="paymerangLogo" src="https://ww1.prweb.com/prfiles/2018/03/19/15338702/Paymerang.jpg">
                 <h3>Client result demo using Vue.js (cdn) | <a href="https://github.com/SpiderRam/client-data-demo" target="_blank">GitHub Repo</a></h3>
             </div>
         </div>
@@ -106,7 +109,9 @@
                     </div>
                 </div>
                 <div id="results-footer" class="card-footer text-muted">
-                    <button id="back" @click="activeClient = {}">Back</button>
+                    <div id="footerDiv">
+                        <button id="back" @click="activeClient = {}">Back</button>
+                    </div>
                 </div>
             </div>
 
