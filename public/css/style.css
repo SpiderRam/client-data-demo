@@ -17,6 +17,7 @@
 #main {
     background-image: url("../images/paymerang-background.png");
     padding: 40px 0px;
+    background-size: cover;
 }
 
 .card {
@@ -37,24 +38,40 @@ ul {
     list-style: none;
 }
 
-.modal-header, .modal-footer {
-    background-image: url("../images/modal-background.png");
-}
+
 
 .nav-link {
-    color: white;
-    text-shadow: 1px 1px steelblue;
+    color: steelblue;
 }
 
 .nav-tabs .nav-link.active {
     color: blueviolet;
-    text-shadow: none;
 }
 
-#modalButton {
+#back {
     background-color: transparent;
+    float: right;
+    border-radius: .25rem;
+    color: blueviolet;
+    padding: 10px 25px;
 }
 
-#modalButton:hover {
+#back:hover {
     background-color: blueviolet;
+    color: white;
+}
+
+.nameAndIcon {
+    display: inline-flex;
+}
+
+.nameAndIcon img {
+    height: 30px;
+    width: 30px;
+    margin: 0px 10px 25px 0px;
+}
+
+.payorName {
+    font-weight: bold;
+    color: blueviolet;
 }

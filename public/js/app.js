@@ -2,8 +2,10 @@ new Vue({
 	el:'#vue',
 	data:{
         clients: [],
+        remittances: [],
         limit: 5,
-        skip: 0
+        skip: 0,
+        activeClient: {},
   },
   methods: {
     getClients: function() {
@@ -15,9 +17,6 @@ new Vue({
             console.log(response);
             self.clients = response;
         });
-    },
-    modalToggle: function() {
-        $("#results-modal").modal("toggle");
     }
   },
   created: function() {
