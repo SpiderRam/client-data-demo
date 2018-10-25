@@ -15,6 +15,9 @@ new Vue({
             console.log(response);
             self.clients = response;
         });
+    },
+    modalToggle: function() {
+        $("#results-modal").modal("toggle");
     }
   },
   created: function() {
